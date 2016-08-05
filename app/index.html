@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>少侠你看我做了一个知乎日报mac客户端</title>
+    <link rel="stylesheet" href="http:\/\/news-at.zhihu.com\/css\/news_qa.auto.css?v=4b3e3" >
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body scroll="no">
+<div class="left">
+    <ul id="list-wrap"></ul>
+</div>
+<div class="right">
+    <div class="content1"></div>
+</div>
+</body>
+<script type="text/template" id="list-tpl">
+    <% for(var i = 0;i< list.length;i++){ %>
+    <li data-pageid="<%= list[i].id %>" class="left-list" >
+        <img src="<%= list[i].images[0] %>" width="30" height="30"/>
+        <p><%= list[i].title %></p>
+        <div style="clear: both;" ></div>
+    </li>
+    <% } %>
+</script>
+<script type="text/javascript" src="js/index.js" ></script>
+</html>

@@ -1,0 +1,53 @@
+body{
+    -webkit-app-region:drag;
+}
+body{
+    width: 800px;
+    height: 600px;
+}
+.left{
+    width:320px;
+    height: 600px;
+    float: left;
+    border-right:1px solid #eeeeee;
+    overflow: scroll;
+}
+.left ul li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+}
+.left ul li img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+}
+.left ul li p{
+    line-height: 15px;
+}
+.right{
+    width:479px;
+    height: 600px;
+    float: right;
+    overflow: scroll;
+    text-align: center;
+}
+.img-right{
+    width: 479px;
+    /*height: 100px;*/
+    overflow: hidden;
+}
+.content1{margin: 0;}
+.handler{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+.img-place-holder{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
